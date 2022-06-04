@@ -1,0 +1,1 @@
+mount -t vboxsf EDX ~/shared3
