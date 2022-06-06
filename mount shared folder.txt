@@ -1,1 +1,1 @@
-mount -t vboxsf EDX ~/shared3
+sudo mount -t vboxsf EDX-CS50s-AI ~/shared3
