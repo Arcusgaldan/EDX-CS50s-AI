@@ -1,0 +1,5 @@
+I started by using the parameters set in the handwriting.py file, from the source code available in the lecture. This yielded around 5% accuracy, so I started tinkering with the parameters.
+
+I increased the size of the hidden layer, which gave virtually no result. The first major breakthrough came when I then put 3 hidden layers, each still with 128 nodes. My reasoning behind 3 layers was that the input was splitted in 3 colors, and even though I knew that the hidden layers wouldn't receive the colors separately, I read that it's a nice practice to have one hidden layer for each discerning feature of the data, and therefore I used the number of colors as this feature. By then, it was averaging 90% accuracy.
+
+Then I started tinkering with the number of filters in the covolution method and even tried adding one more layer of convo+pooling. All of those changes also yielded me no major change, and I was still averaging 90%. What got me to the 93% average (which is my peak average) was sizing up the hidden layers to 300 units and using a 3x3 kernel size in the covolution step.
